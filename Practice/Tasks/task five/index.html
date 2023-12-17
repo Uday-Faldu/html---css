@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        nav ul li{
+            display: inline;
+            padding-inline: 40px;
+            position: relative;
+            background-color: red;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            font-size: 20px;
+           transition: 5s;
+            
+        }
+        nav ul{
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            margin-inline: 10px;
+
+            
+        }
+        .dropdown-1{
+            position: absolute;
+            width: 300px;
+            height: 00px;
+            left: 0px;
+            margin-top: 50px;
+            top: 0px;
+            background-color: antiquewhite;
+            visibility: hidden;
+            overflow: hidden;
+            
+       }
+        .dropdown-1 p{
+            top:50px;
+            display: block;
+            background-color: antiquewhite;
+            
+        }
+
+        nav ul li:hover .dropdown-1{
+            visibility: visible;
+            
+            height: 300px;
+            transition: 2s;
+        }
+
+        .dropdown-2{
+            position: absolute;
+            display: flex;
+            width: 700px;
+            background-color: antiquewhite;
+            top: 60px;
+            left: -10px;
+            visibility: hidden;
+            /* transition: 2s; */
+        }
+
+        .dropdown-2 .list{
+            padding-inline: 35px;
+            margin-top: 20px;
+            /* transition: 2s; */
+            /* display: flex; */
+            /* justify-content: left; */
+            /* margin-right: 50px; */
+            /* margin-left: 50px; */
+            /* padding-bottom: 30px; */
+        }
+
+        .dropdown-2 .list :nth-child(1){
+            margin-top: 20px;
+        }
+
+        nav ul li:hover .dropdown-2{
+            visibility: visible;
+            /* transition: 2s; */
+        }
+
+        .dropdown-3{
+            position: absolute;
+            height: 350px;
+            width: 300px;
+            background-color: antiquewhite;
+            top:60px;
+            padding-top: 15px;
+            left: 10px;
+            visibility: hidden;
+            /* transition: 2s; */
+        }
+
+        nav ul li:hover .dropdown-3{
+            visibility: visible;
+            /* transition: 2s; */
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>Services
+                <div class="dropdown-1">
+                    
+                    <p>eCommerce Devlopment</p>
+                    <p>Mobile App Devlopmet</p>
+                    <p>Backend Devlopment</p>
+                    <p>Frontent Devlopment</p>
+                    <p>Web Devlopment</p>
+                    <p>UI/UX Devlopment</p>
+                   
+                
+                </div>
+            </li>
+            <li>Technologies
+                <div class="dropdown-2">
+                    <div class="list">ECommerce <hr>
+                        <p>Magento</p>
+                        <p>Shopify</p>
+                        <p>WooCommerce</p>
+                        <p>Shopware</p>
+                    </div>
+                    <div class="list">Mobil<hr>
+                        <p1><p>IOS</p>
+                        <p>Android</p>
+                        <p>React native</p>
+                        <p>Flutte</p></p1>
+                    </div>
+                    <div class="list">JavaScript<hr>
+                        <p>Angular</p>
+                        <p>React JS</p>
+                        <p>Vue JS</p>
+                        <p>Node JS</p>
+                    </div>
+                    <div class="list">CMS<hr>
+                        <p>WordPress</p>
+                        <p>Laravel</p>
+                        <p>PHP</p>
+                        <p>Webflow</p>
+                        <p>Drupal</p>
+                    </div>
+                </div>
+            </li>
+            <li>Solution
+                <div class="dropdown-3">Magento 2 Solution <hr>
+                    <p>Magento Support & Maintenance</p>
+                    <p>Magento 2 Devlopment</p>
+                    <p>Magento 2 Upgrade</p>
+                    <p>Migrate to Magento 2</p>
+                    <p>Magento PWA Devlopment</p>
+                    <p>Hyva Theme Devlopment</p>
+                    <p>Magento Integrstion</p>
+                </div>
+            </li>
+            <li>Megento Store</li>
+            <li>Hire devloper</li>
+            <li>Work Compnay</li>
+            
+        </ul>
+    </nav>
+    
+</body>
+</html>

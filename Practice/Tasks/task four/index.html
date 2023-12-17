@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            height: 450px;
+            width: 250px;
+            background-color: beige;
+            position: relative;
+            
+        }
+        .first{
+            height: 270px;
+            width: 250px;
+            background-color:beige;
+            /* border: 2px solid; */
+            position: absolute  ;
+        }
+
+        .quickView{
+            position: absolute;
+            top: 0;
+            width: inherit;
+            height: 42px;
+            background-color: black;
+            color: aliceblue;
+            font-size: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: .40s;
+            
+           
+        }
+
+        img{
+            padding: 22px;
+            padding-top: 50px;
+        }
+
+        .first:hover .quickView{
+            top:230px;
+            transition: .40s;
+        }
+
+        .quickView:hover{
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="first">
+            <div class="quickView">Quick View</div>
+            <img src="img.jpg" alt="" height="200px" width="200px" >
+        </div>
+    </div>
+</body>
+</html>

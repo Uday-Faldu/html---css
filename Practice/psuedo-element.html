@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            /* width: 200px;
+            height: 200px;
+            border: 2px solid;
+            background-color: red; */
+            text-align: center;
+            color: red;
+        }
+        .box::after{
+            content: "dynamic word   ";
+
+        }
+        .box::before{
+            content: "dynamic word   ";
+
+        }
+        ::selection{
+            background-color: red;
+            color: yellow;
+        }
+        div::first-line{
+            background-color: red;
+        }
+       .main:first-child{
+        background-color: red;
+       }
+    </style>
+</head>
+<body>
+   <!-- 
+    pusedo element : which elemnt not existing in web page and  we want to create element it is called as  a psuedo element
+    -->
+    <!-- 2 types of psuedo element -->
+    <!-- ::after -->
+    <!-- ::before -->
+
+
+     <!-- <div class="box">
+
+     </div> -->
+     <!-- <h1 class="box">
+        Hello world
+     </h1> -->
+    
+  </a>
+</body>
+</html>
